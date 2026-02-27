@@ -12,5 +12,5 @@ const Footer = () => {
     </footer>
   );
 };
-
+//fpooter section 
 export default Footer;
