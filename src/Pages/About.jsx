@@ -99,7 +99,7 @@ const AboutPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#02030a] text-white overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] sm-mt-0" id="About">
+    <div className="min-h-screen bg-[#02030a] text-white pb-10 overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] sm-mt-0" id="About">
       <Header />
       <div className="w-full mx-auto pt-6 sm:pt-10 relative">
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
