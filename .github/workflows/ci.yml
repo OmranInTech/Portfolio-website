@@ -1,4 +1,4 @@
-name: CI - Build Check
+name: CI - Build & Deploy
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22  # recommended for Vite  # <-- update Node
           cache: "npm"
 
       - name: Install dependencies
@@ -25,3 +25,15 @@ jobs:
 
       - name: Run build
         run: npm run build
+
+      # Optional Netlify deploy step
+      # Make sure you set NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID in GitHub Secrets
+      - name: Deploy to Netlify
+        if: github.ref == 'refs/heads/main'
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: ./dist
+          production-deploy: true
+          deploy-message: "Deployed via GitHub Actions"
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
