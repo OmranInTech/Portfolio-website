@@ -29,7 +29,7 @@ const AnimatedItem = ({ children, delay = 0 }) => {
 
 export default function Contact() {
   return (
-    <div className="w-full min-h-screen bg-[#02030a] text-white px-5 md:px-[10%] lg:px-[12%] xl:px-[15%] py-20">
+    <div id='Contact'className="w-full min-h-screen bg-[#02030a] text-white px-5 md:px-[10%] lg:px-[12%] xl:px-[15%] py-20">
       {/* HEADER */}
       <div className="text-center pb-12">
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">
