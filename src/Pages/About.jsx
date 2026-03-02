@@ -3,17 +3,18 @@ import { FileText, Code, Award, Globe, ArrowUpRight, Sparkles } from "lucide-rea
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ProfilePic from "../assets/images/omran.jpeg";
+import ProfileCV from "../assets/omrancv.pdf";
 
 // Memoized Header Component
 const Header = memo(() => (
-  <div className="text-center lg:mb-6 mb-2 px-[5%]">
-    <h2
+  <div className="text-center lg:mb-6  px-[5%]">
+    <h1
       className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400"
       data-aos="zoom-in-up"
       data-aos-duration="600"
     >
       About Me
-    </h2>
+    </h1>
     <p
       className="mt-1 text-gray-400 max-w-2xl mx-auto text-sm sm:text-base flex items-center justify-center gap-2"
       data-aos="zoom-in-up"
@@ -71,30 +72,14 @@ const StatCard = memo(({ icon: Icon, color, value, label, description, animation
 ));
 
 const AboutPage = () => {
-  const { totalProjects, totalCertificates, YearExperience } = useMemo(() => {
-    const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
-    const storedCertificates = JSON.parse(localStorage.getItem("certificates") || "[]");
-    const startDate = new Date("2021-11-06");
-    const today = new Date();
-    const experience =
-      today.getFullYear() - startDate.getFullYear() -
-      (today < new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate()) ? 1 : 0);
-    return {
-      totalProjects: storedProjects.length,
-      totalCertificates: storedCertificates.length,
-      YearExperience: experience
-    };
-  }, []);
-
   const statsData = useMemo(() => [
-    { icon: Code, color: "from-indigo-400 to-purple-400", value: totalProjects, label: "Total Projects", description: "Innovative web solutions crafted", animation: "fade-right" },
-    { icon: Award, color: "from-purple-400 to-indigo-400", value: totalCertificates, label: "Certificates", description: "Skills validated professionally", animation: "fade-up" },
-    { icon: Globe, color: "from-indigo-400 to-purple-400", value: YearExperience, label: "Years of Experience", description: "Continuous learning journey", animation: "fade-left" },
-  ], [totalProjects, totalCertificates, YearExperience]);
+    { icon: Code, color: "from-indigo-400 to-purple-400", value: "10+", label: "Total Projects", description: "Innovative web solutions crafted", animation: "fade-right" },
+    { icon: Award, color: "from-purple-400 to-indigo-400", value: "20+", label: "Certificates", description: "Skills validated professionally", animation: "fade-up" },
+    { icon: Globe, color: "from-indigo-400 to-purple-400", value: "2+", label: "Years of Experience", description: "Continuous learning journey", animation: "fade-left" },
+  ], []);
 
   useEffect(() => {
-    // Initialize AOS
-    AOS.init({ duration: 1000, mirror: true }); // mirror:true ensures animations replay on scroll
+    AOS.init({ duration: 1000, mirror: true });
     AOS.refresh();
   }, []);
 
@@ -123,13 +108,21 @@ const AboutPage = () => {
 
             {/* Buttons Section */}
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-3 lg:gap-4 w-full">
-              <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" className="w-full lg:w-auto">
+              <a href={ProfileCV} target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto">
                 <button className="w-full lg:w-auto sm:px-4 py-1 sm:py-2 rounded-lg bg-gradient-to-r from-indigo-400 to-purple-400 text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl text-sm sm:text-base">
                   <FileText className="w-4 h-4 sm:w-4 sm:h-4" /> Download CV
                 </button>
               </a>
 
-              <a href="#Portfolio" className="w-full lg:w-auto">
+              <a
+                href="#Portfolio"
+                className="w-full lg:w-auto"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.querySelector("#Portfolio");
+                  target?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 <button className="w-full lg:w-auto sm:px-4 py-1 sm:py-2 rounded-lg border border-purple-400/50 text-purple-400 font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-purple-400/10 text-sm sm:text-base">
                   <Code className="w-4 h-4 sm:w-4 sm:h-4" /> View Projects
                 </button>

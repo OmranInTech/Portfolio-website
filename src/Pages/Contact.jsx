@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { Share2, Phone, Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Share2, Mail, Github, Linkedin, X } from "lucide-react";
 
 const AnimatedItem = ({ children, delay = 0 }) => {
   const ref = useRef(null);
@@ -29,7 +29,7 @@ const AnimatedItem = ({ children, delay = 0 }) => {
 
 export default function Contact() {
   return (
-    <div id='Contact'className="w-full min-h-screen bg-[#02030a] text-white px-5 md:px-[10%] lg:px-[12%] xl:px-[15%] py-20">
+    <div id='Contact' className="w-full min-h-screen bg-[#02030a] text-white px-5 md:px-[10%] lg:px-[12%] xl:px-[15%] py-20">
       {/* HEADER */}
       <div className="text-center pb-12">
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">
@@ -59,8 +59,8 @@ export default function Contact() {
             {/* CONTACT INFO */}
             <div className="flex flex-col gap-3 mb-8 text-lg">
               <p className="font-medium">Name: <span className="text-slate-300">Omran Ahmadzai</span></p>
-              <p className="font-medium">Email: <span className="text-slate-300">omran@example.com</span></p>
-              <p className="font-medium">Phone: <span className="text-slate-300">+93 700 000 000</span></p>
+              <p className="font-medium">Email: <span className="text-slate-300">hmadzai.omran12@gmail.com</span></p>
+              <p className="font-medium">Phone: <span className="text-slate-300">+93 766 773 758</span></p>
             </div>
 
             <button className="w-full text-xl sm:text-2xl bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-black font-bold px-8 py-4 rounded-xl hover:scale-105 transition-all mb-8">
@@ -68,12 +68,19 @@ export default function Contact() {
             </button>
 
             {/* SOCIAL MEDIA */}
-            <div className="flex gap-6 mt-2 justify-center text-2xl sm:text-3xl">
-              <a href="#" className="hover:text-purple-400 transition-colors"><Github className="w-8 h-8" /></a>
-              <a href="#" className="hover:text-blue-500 transition-colors"><Linkedin className="w-8 h-8" /></a>
-              <a href="#" className="hover:text-sky-400 transition-colors"><Twitter className="w-8 h-8" /></a>
-              <a href="mailto:omran@example.com" className="hover:text-green-400 transition-colors"><Mail className="w-8 h-8" /></a>
-              <a href="tel:+93700000000" className="hover:text-orange-400 transition-colors"><Phone className="w-8 h-8" /></a>
+            <div className="flex gap-8 mt-2 justify-center text-3xl sm:text-4xl">
+              <a href="https://github.com/omranInTech" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">
+                <Github className="w-10 h-10" />
+              </a>
+              <a href="https://linkedin.com/in/omran-ahmadzai-68a5b6351" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">
+                <Linkedin className="w-10 h-10" />
+              </a>
+              <a href="mailto:ahmadzai.omran12@gmail.com" className="hover:text-green-400 transition-colors">
+                <Mail className="w-10 h-10" />
+              </a>
+              <a href="https://x.com/omranahmadzai1?s=21" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400 transition-colors">
+                <X className="w-10 h-10" />
+              </a>
             </div>
           </div>
         </AnimatedItem>

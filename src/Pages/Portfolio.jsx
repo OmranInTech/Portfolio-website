@@ -4,7 +4,8 @@ import Certificate from "../components/Certificate";
 import TechStack from "../components/TechStack";
 import { Code, Award, Boxes } from "lucide-react";
 
-import mymirathImg from "../assets/images/mymirath.png";
+import mymirathImg from "../assets/images/projects/mymirath.png";
+import portfoliImg from "../assets/images/projects/portfolio.png";
 
 /* ================= CERTIFICATE IMAGES ================= */
 
@@ -24,12 +25,12 @@ const sampleProjects = [
     Img: mymirathImg,
     Title: "MyMirath",
     Description: "Islamic inheritance calculator assistance",
-    DemoLink: "#",
-    GithubLink: "#",
+    DemoLink: "https://mymirath.netlify.app/",
+    GithubLink: "https://github.com/OmranInTech/Mymirath",
   },
   {
     id: 2,
-    Img: "https://via.placeholder.com/400x250",
+    Img: portfoliImg,
     Title: "Portfolio Website",
     Description: "React + Tailwind + Animations",
     DemoLink: "#",
