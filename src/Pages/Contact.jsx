@@ -59,7 +59,7 @@ export default function Contact() {
             {/* CONTACT INFO */}
             <div className="flex flex-col gap-3 mb-8 text-lg">
               <p className="font-medium">Name: <span className="text-slate-300">Omran Ahmadzai</span></p>
-              <p className="font-medium">Email: <span className="text-slate-300">hmadzai.omran12@gmail.com</span></p>
+              <p className="font-medium">Email: <span className="text-slate-300">ahmadzai.omran12@gmail.com</span></p>
               <p className="font-medium">Phone: <span className="text-slate-300">+93 766 773 758</span></p>
             </div>
 

@@ -7,7 +7,9 @@ import { Code, Award, Boxes } from "lucide-react";
 import mymirathImg from "../assets/images/projects/mymirath.png";
 import portfoliImg from "../assets/images/projects/portfolio.png";
 import StudentDb from "../assets/images/projects/StudentDB.png";
-
+import Safehood from "../assets/images/projects/Safehood.png";
+import weatherapp from "../assets/images/projects/weatherapp.png";
+import crypto from "../assets/images/projects/crypto.jpeg";
 /* ================= CERTIFICATE IMAGES ================= */
 
 import metafrontend from "../assets/images/certificatespics/metafrontend.png";
@@ -31,12 +33,13 @@ const sampleProjects = [
   },
   {
     id: 2,
-    Img: portfoliImg,
-    Title: "Portfolio Website",
-    Description: "React + Tailwind + Animations",
-    DemoLink: "https://omranahmadzai.netlify.app/",
-    GithubLink: "https://github.com/OmranInTech/Portfolio-website",
+    Img: Safehood,
+    Title: "Kabul Security System",
+    Description: "Under development: A security system Modernizing Kabul's safety infrastructure",
+    DemoLink: "",
+    GithubLink: "",
   },
+  
   {
     id: 3,
     Img: StudentDb,
@@ -47,27 +50,28 @@ const sampleProjects = [
   },
   {
     id: 4,
-    Img: "https://via.placeholder.com/400x250",
-    Title: "Blog Platform",
-    Description: "React + Firebase + Tailwind",
-    DemoLink: "#",
-    GithubLink: "#",
-  },
+    Img: portfoliImg,
+    Title: "Portfolio Website",
+    Description: "React + Tailwind + Animations",
+    DemoLink: "https://omranahmadzai.netlify.app/",
+    GithubLink: "https://github.com/OmranInTech/Portfolio-website",
+  }
+  ,
   {
     id: 5,
-    Img: "https://via.placeholder.com/400x250",
-    Title: "Task Manager",
-    Description: "React Context API project",
-    DemoLink: "#",
-    GithubLink: "#",
+    Img: weatherapp,
+    Title: "Weather App",
+    Description: "Weather App using JavaScript and Weather API",
+    DemoLink: "https://omranahmadzaiweatherapp.netlify.app/",
+    GithubLink: "",
   },
   {
     id: 6,
-    Img: "https://via.placeholder.com/400x250",
-    Title: "Weather App",
-    Description: "JavaScript + Weather API",
-    DemoLink: "#",
-    GithubLink: "#",
+    Img: crypto,
+    Title: "Crypto Tracking Dashboard (Work in Progress)",
+    Description: "Details will share soon",
+    DemoLink: "",
+    GithubLink: "",
   },
 ];
 
@@ -90,7 +94,7 @@ const techStackData = [
   { id: 1, name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
   { id: 2, name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { id: 3, name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { id: 4, name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+  { id: 4, name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain-wordmark.svg" },
   { id: 5, name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
   { id: 6, name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
   { id: 7, name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
