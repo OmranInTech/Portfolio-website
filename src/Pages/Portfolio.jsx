@@ -6,6 +6,7 @@ import { Code, Award, Boxes } from "lucide-react";
 
 import mymirathImg from "../assets/images/projects/mymirath.png";
 import portfoliImg from "../assets/images/projects/portfolio.png";
+import StudentDb from "../assets/images/projects/StudentDB.png";
 
 /* ================= CERTIFICATE IMAGES ================= */
 
@@ -33,16 +34,16 @@ const sampleProjects = [
     Img: portfoliImg,
     Title: "Portfolio Website",
     Description: "React + Tailwind + Animations",
-    DemoLink: "#",
-    GithubLink: "#",
+    DemoLink: "https://omranahmadzai.netlify.app/",
+    GithubLink: "https://github.com/OmranInTech/Portfolio-website",
   },
   {
     id: 3,
-    Img: "https://via.placeholder.com/400x250",
-    Title: "E-commerce App",
-    Description: "Fullstack Node.js & MongoDB",
-    DemoLink: "#",
-    GithubLink: "#",
+    Img: StudentDb,
+    Title: "Student Database Management System",
+    Description: "Student Database Management System using Django and SQLite",
+    DemoLink: "https://github.com/OmranInTech/Student-database-system",
+    GithubLink: "https://github.com/OmranInTech/Student-database-system",
   },
   {
     id: 4,

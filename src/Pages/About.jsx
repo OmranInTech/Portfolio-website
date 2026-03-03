@@ -94,14 +94,14 @@ const AboutPage = () => {
               <span className="block mt-1 text-gray-200">Omran Ahmadzai</span>
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-400 leading-relaxed text-justify pb-2 sm:pb-0" data-aos="fade-right">
-              I am a passionate Full Stack Web Developer with experience in building modern, scalable web applications. I specialize in creating seamless digital experiences using React, Node.js, Django, and MongoDB, while constantly learning and improving my craft.
+              I am a Full Stack Web Developer with expertise in building modern, scalable web applications. I craft seamless digital experiences using React, Django, PostgreSQL, and APIs, while integrating DevOps practices for efficient deployment and maintenance. With professional certifications and a Bachelor’s degree in Computer Science, I combine technical knowledge and practical experience to deliver high-quality, production-ready solutions.           
             </p>
 
             {/* Quote Section */}
             <div className="relative bg-gradient-to-br from-indigo-400/10 via-transparent to-purple-400/10 border border-[#6366f1]/30 rounded-2xl p-3 my-4 backdrop-blur-md shadow-2xl overflow-hidden" data-aos="fade-up">
               <div className="absolute top-2 right-4 w-12 h-12 bg-gradient-to-r from-indigo-400/20 to-purple-400/20 rounded-full blur-xl"></div>
               <div className="absolute -bottom-3 -left-2 w-10 h-10 bg-gradient-to-r from-purple-400/20 to-indigo-400/20 rounded-full blur-lg"></div>
-              <blockquote className="text-gray-300 text-center lg:text-left italic font-medium text-xs relative z-10 pl-4">
+              <blockquote className="text-gray-300 text-center lg:text-left italic font-medium text-sm relative z-10 pl-4">
                 "Transforming ideas into code and delivering professional web solutions."
               </blockquote>
             </div>

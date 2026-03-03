@@ -151,7 +151,7 @@ const Home = () => {
           data-aos-delay="300"
           className="text-gray-400 text-[16px] sm:text-[17px] max-w-xl mx-auto"
         >
-          Building scalable, high-performance web applications using modern full-stack technologies.
+          Building scalable, high-performance web applications using modern Web  technologies.
         </p>
 
         {/* STACK */}
@@ -160,7 +160,7 @@ const Home = () => {
           data-aos-delay="450"
           className="flex flex-wrap gap-4 justify-center"
         >
-          {["React", "Node", "Django", "MongoDB", "Tailwind"].map((s) => (
+          {["TypeScript", "JavaScript", "Python(Django)", "React", "PostgreSQL"].map((s) => (
             <span
               key={s}
               className="relative px-5 py-3 text-[15px] sm:text-[16px] rounded-full bg-white/5 border border-white/10 text-gray-300 hover:scale-110 transition overflow-hidden group"
