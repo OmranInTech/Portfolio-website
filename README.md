@@ -1,6 +1,5 @@
 # Omran Ahmadzai | Portfolio Website
 
-![Portfolio Banner](https://via.placeholder.com/1200x300?text=Omran+Ahmadzai+Portfolio)
 
 This is my **personal portfolio website** built with **React**, **Vite**, and **Tailwind CSS**, showcasing my projects, skills, and achievements. It features **modern UI/UX design**, **responsive layout**, **animations**, and is fully **SEO-friendly**.
 
@@ -112,11 +111,7 @@ This portfolio is deployed using **Netlify** with **CI/CD**:
 
 ---
 
-## 📸 Screenshots
 
-*Add screenshots or GIFs of your portfolio here.*
-
----
 
 ## 🔗 Links
 
