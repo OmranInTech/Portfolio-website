@@ -39,7 +39,27 @@
 
       gtag('config', 'G-KZ8E5GH898');
     </script>
-  </head>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Omran Ahmadzai",
+      "url": "https://www.omranahmadzai.com",
+      "sameAs": [
+        "https://github.com/OmranInTech",
+        "https://www.linkedin.com/in/omran-ahmadzai-68a5b6351/"
+      ],
+      "jobTitle": "Full Stack Web Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Self-employed"
+      },
+      "image": "/omran.jpeg",
+      "description": "Building professional web applications using React, Django, Node.js, PostgreSQL, Tailwind CSS, and modern DevOps practices."
+    }</script>  
+</head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
