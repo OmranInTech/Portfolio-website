@@ -3,7 +3,7 @@ import { FileText, Code, Award, Globe, ArrowUpRight, Sparkles } from "lucide-rea
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ProfilePic from "../assets/images/omran.jpeg";
-import ProfileCV from "../assets/omrancv.pdf";
+import ProfileCV from "../assets/omranCV.pdf";
 
 // Memoized Header Component
 const Header = memo(() => (
