@@ -13,6 +13,7 @@ This is my **personal portfolio website** built with **React**, **Vite**, and **
 
 ## 🛠 Tech Stack
 
+
 * **Frontend:** React, Vite
 * **Styling:** Tailwind CSS
 * **Animations:** AOS (Animate on Scroll)
